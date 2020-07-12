@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Notes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwL-6b-9SK">
+                                <rect key="frame" x="148" y="752" width="118" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Create New Note">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZN-Hr-yhZ">
+                                <rect key="frame" x="119" y="692" width="176" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="View or Edit Existing Note">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbn-mi-Cxa">
+                                <rect key="frame" x="168.5" y="430" width="77" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CZN-Hr-yhZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G7c-B6-yJo"/>
+                            <constraint firstItem="kbn-mi-Cxa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JKr-nk-c0s"/>
+                            <constraint firstItem="kbn-mi-Cxa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="apb-Np-l7c"/>
+                            <constraint firstItem="hwL-6b-9SK" firstAttribute="top" secondItem="CZN-Hr-yhZ" secondAttribute="bottom" constant="30" id="bTK-yd-IfF"/>
+                            <constraint firstItem="hwL-6b-9SK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wFA-Va-9vx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hwL-6b-9SK" secondAttribute="bottom" constant="80" id="zeL-wY-G6t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-64" y="138"/>
+        </scene>
+        <!--New Note View Controller-->
+        <scene sceneID="uEV-Bd-Dbb">
+            <objects>
+                <viewController id="m3A-n8-sXk" customClass="NewNoteViewController" customModule="Notes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KsX-8X-g1S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lt4-Ga-8Mh">
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AzL-vA-Nxi">
+                                <rect key="frame" x="342" y="797" width="37" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lDi-s6-5ZJ">
+                                <rect key="frame" x="20" y="64" width="300" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lDi-s6-5ZJ" firstAttribute="leading" secondItem="9mN-nt-BNt" secondAttribute="leading" constant="20" id="3NF-6j-UqP"/>
+                            <constraint firstItem="9mN-nt-BNt" firstAttribute="bottom" secondItem="AzL-vA-Nxi" secondAttribute="bottom" constant="35" id="PmI-81-h4p"/>
+                            <constraint firstItem="9mN-nt-BNt" firstAttribute="trailing" secondItem="lt4-Ga-8Mh" secondAttribute="trailing" id="STL-MH-2AI"/>
+                            <constraint firstItem="9mN-nt-BNt" firstAttribute="bottom" secondItem="lt4-Ga-8Mh" secondAttribute="bottom" id="XeU-6j-Fix"/>
+                            <constraint firstItem="lt4-Ga-8Mh" firstAttribute="leading" secondItem="9mN-nt-BNt" secondAttribute="leading" id="dUg-dq-Alg"/>
+                            <constraint firstItem="9mN-nt-BNt" firstAttribute="trailing" secondItem="lt4-Ga-8Mh" secondAttribute="trailing" id="f80-ja-FH5"/>
+                            <constraint firstItem="lt4-Ga-8Mh" firstAttribute="top" secondItem="9mN-nt-BNt" secondAttribute="top" constant="60" id="fc9-di-Zyb"/>
+                            <constraint firstItem="9mN-nt-BNt" firstAttribute="trailing" secondItem="AzL-vA-Nxi" secondAttribute="trailing" constant="35" id="pq5-mi-Oo2"/>
+                            <constraint firstItem="9mN-nt-BNt" firstAttribute="bottom" secondItem="lt4-Ga-8Mh" secondAttribute="bottom" id="tJz-m3-3l4"/>
+                            <constraint firstItem="lt4-Ga-8Mh" firstAttribute="leading" secondItem="9mN-nt-BNt" secondAttribute="leading" id="usg-C2-DAJ"/>
+                            <constraint firstItem="lDi-s6-5ZJ" firstAttribute="top" secondItem="9mN-nt-BNt" secondAttribute="top" constant="20" id="wzZ-BY-gQG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9mN-nt-BNt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="m03-fM-iAT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zsr-YR-38d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763.768115942029" y="137.94642857142856"/>
+        </scene>
+        <!--Note List View Controller-->
+        <scene sceneID="1xw-qM-7b9">
+            <objects>
+                <viewController id="a6H-tn-unM" customClass="NoteListViewController" customModule="Notes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gAH-YL-yKf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqn-59-JyG">
+                                <rect key="frame" x="140.5" y="64" width="133.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cqn-59-JyG" firstAttribute="centerX" secondItem="gAH-YL-yKf" secondAttribute="centerX" id="cjT-4j-gTQ"/>
+                            <constraint firstItem="cqn-59-JyG" firstAttribute="top" secondItem="tJn-De-b4z" secondAttribute="top" constant="20" id="yzL-k9-Gkg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tJn-De-b4z"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AsH-pT-e9t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65" y="842"/>
+        </scene>
+        <!--Existing Note View Controller-->
+        <scene sceneID="W7K-OF-c9e">
+            <objects>
+                <viewController id="mHJ-z2-MFJ" customClass="ExistingNoteViewController" customModule="Notes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GpW-Q5-Iqg" customClass="Ex">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEo-1o-vjG">
+                                <rect key="frame" x="342" y="782" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OQP-D9-3lX">
+                                <rect key="frame" x="20" y="49" width="300" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="N8i-hO-FKN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L3x-co-ChT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="843"/>
+        </scene>
+    </scenes>
+</document>
